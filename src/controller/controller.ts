@@ -4,6 +4,11 @@ import * as logger from 'morgan'
 import * as path from 'path';
 import * as cookieParser from 'cookie-parser';
 
+/*--------------------引入服务---------------------*/
+import * as loginService from '../services/loginService'
+/*-----------------------------------------------*/
+
+
 const app = express();
 
 app.use(logger('dev'));
@@ -15,9 +20,7 @@ app.use(cookieParser());
     //待编码
 
 /**********各种请求路径**********/
-app.use('/',(req,res,next)=>{
-   res.send('请求成功！！！');
-});
+app.use('/',loginService.login());
 
 /**********atch 404 and forward to error handler**********/
 app.use((req, res, next) => {
@@ -30,12 +33,5 @@ app.use((err, req, res, next) =>{
     res.status(err.status || 500);
     res.end('error');
 });
-
-
-/*
-const server = app.listen(8000,'localhost',() =>{
-   console.log('服务器启动,端口:8000')
-});
-*/
 export = app;
 

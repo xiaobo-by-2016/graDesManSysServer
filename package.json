@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node build/bin/index"
+    "start": "nodemon build/bin/index"
   },
   "keywords": [
     "es6"
@@ -13,12 +13,15 @@
   "author": "xiaobo",
   "license": "ISC",
   "dependencies": {
+    "@alicloud/sms-sdk": "^1.0.9",
     "cookie-parser": "^1.4.3",
     "debug": "^3.1.0",
     "express": "^4.16.3",
     "http-errors": "^1.6.3",
+    "label": "^0.2.2",
     "morgan": "^1.9.0",
-    "mysql": "^2.15.0"
+    "mysql": "^2.15.0",
+    "qcloudsms_js": "^0.1.0"
   },
   "devDependencies": {
     "@types/cookie-parser": "^1.4.1",
