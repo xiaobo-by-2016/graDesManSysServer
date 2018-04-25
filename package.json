@@ -13,7 +13,6 @@
   "author": "xiaobo",
   "license": "ISC",
   "dependencies": {
-    "@alicloud/sms-sdk": "^1.0.9",
     "cookie-parser": "^1.4.3",
     "debug": "^3.1.0",
     "express": "^4.16.3",
