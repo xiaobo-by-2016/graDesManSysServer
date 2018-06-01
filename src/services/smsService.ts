@@ -11,8 +11,8 @@ const qcloudsms =QcloudSms();
 /*
 const SMSClient = require('@alicloud/sms-sdk');
 // ACCESS_KEY_ID/ACCESS_KEY_SECRET 根据实际申请的账号信息进行替换
-const accessKeyId = 'LTAIpg9JgkfWwUm3';
-const secretAccessKey = 'SYg4HrssVdnh6qklEMZ5Vh7Fr5qUGY';
+const accessKeyId = 'LTAIxOfuGv68k9YG';
+const secretAccessKey = 'zVCQpFSJuNp1b7CKrnNbceGT7IMgqn';
 //初始化sms_client
 let smsClient = new SMSClient({accessKeyId, secretAccessKey});
 //发送短信
@@ -20,7 +20,7 @@ const smsService ={
     sendSms:function () {
         smsClient.sendSMS({
             PhoneNumbers: '18428369049',
-            SignName: '毕业设计管理平台',
+            SignName: '本科毕业设计移动服务平台',
             TemplateCode: 'SMS_133180842',
             TemplateParam: '{"code":"12345"}'
         }).then(function (res) {
